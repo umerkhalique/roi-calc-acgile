@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="outer">
+      <img src="money.jpg" alt="idk" class="money" />
+      <div class="inner">
+        <form action="/" id="form">
+          <div class="expenses">
+            <div class="expensemonth">
+              <label for="expensemonth">expense per month in USD/CAD</label>
+              <input type="text" id="expensemonth" name="expensemonth" />
+            </div> 
+          </div>
+          <div class="gains">
+            <div class="textinput">
+              <label for="per_hr"class="txt1">Hourly rate in USD/CAD</label>
+              <input type="text" id="per_hr" name="per_hr" />
+            </div>
+            <div class="radio1">
+              <input type="radio" id="rd1" name="mode" value="week" />
+              <i class="f">week</i>
+            </div>
+            <div class="radio2">
+              <input type="radio" id="rd2" name="mode" value="month" />
+              <i class="f">month</i>
+            </div>
+            <div class="radio3">
+              <input type="radio" id="rd3" name="mode" value="year" />
+              <i class="f">year</i>
+            </div>
+            <div class="btn1">
+              <button type="submit" class="button1" onclick="fn1()">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div class="display">
+          <h1 id="textt">$0.00</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
